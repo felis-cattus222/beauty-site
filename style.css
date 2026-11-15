@@ -24,6 +24,7 @@ h2{color:var(--rose-dark);border-bottom:1px solid var(--beige);padding-bottom:4p
 .pr{background:var(--rose-soft);border:1px solid var(--rose);border-radius:8px;padding:10px 14px;font-size:.9rem}
 .warn{background:#fdf6ec;border:1px solid var(--beige);border-radius:8px;padding:10px 14px;font-size:.9rem}
 .note{color:var(--sub);font-size:.92rem}
+.sera{background:var(--rose-soft);border-left:4px solid var(--rose);border-radius:8px;padding:10px 14px;font-size:.92rem}
 table.cond{border-collapse:collapse;width:100%;margin-top:12px}
 table.cond th,table.cond td{border:1px solid var(--beige);padding:8px 12px;text-align:left;font-size:.94rem;vertical-align:top}
 table.cond th{background:var(--panel);white-space:nowrap;color:var(--rose-dark)}
