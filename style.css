@@ -1,18 +1,23 @@
 
-:root{--bg:#fffdfb;--panel:#faf5ef;--rose:#b76e79;--rose-dark:#9c5563;--rose-soft:#f6e7ea;--beige:#e8dcc8;--ink:#3a3230;--sub:#8a7f78}
+:root{--bg:#fffdfb;--panel:#faf5ef;--rose:#b76e79;--rose-dark:#9c5563;--rose-soft:#f6e7ea;--beige:#e8dcc8;--ink:#3a3230;--sub:#8a7f78;--sky:#a9cde4;--sky-dark:#4f7d9d;--sky-soft:#eef5fa}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;line-height:1.8}
 a{color:var(--rose-dark)}
+a:hover{color:var(--sky-dark)}
 header{background:#fff;padding:14px 20px;border-bottom:2px solid var(--rose-soft)}
-.brand a{color:var(--rose-dark);text-decoration:none;font-weight:bold;font-size:1.1rem}
+.brand a{color:var(--rose-dark);text-decoration:none;font-weight:bold;font-size:1.1rem;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.logo{width:44px;height:44px;border-radius:50%;border:2px solid var(--sky);object-fit:cover;background:#fff}
+.tagline{font-size:.8rem;font-weight:normal;color:var(--sky-dark);border-left:1px solid var(--beige);padding-left:10px}
 nav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 16px}
 nav a{text-decoration:none;font-size:.92rem;color:var(--ink)}
-nav a:hover{color:var(--rose-dark)}
+nav a:hover{color:var(--sky-dark)}
 main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
 .hero{padding:24px 0 8px}
 .hero h1{font-size:2rem;color:var(--rose-dark);margin:0 0 8px}
+.catch{font-size:1.3rem;font-weight:bold;color:var(--rose-dark);margin:8px 0}
+.byline{color:var(--sub);font-size:.88rem;border-top:1px dashed var(--beige);padding-top:8px;margin-top:24px}
 h1{color:var(--rose-dark)}
-h2{color:var(--rose-dark);border-bottom:1px solid var(--beige);padding-bottom:4px;margin-top:36px}
+h2{color:var(--rose-dark);border-bottom:2px solid var(--sky);padding-bottom:4px;margin-top:36px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin-top:16px}
 .card{background:var(--panel);border:1px solid var(--beige);border-radius:10px;padding:16px}
 .card h3{margin:0 0 6px;font-size:1.02rem}
@@ -24,7 +29,7 @@ h2{color:var(--rose-dark);border-bottom:1px solid var(--beige);padding-bottom:4p
 .pr{background:var(--rose-soft);border:1px solid var(--rose);border-radius:8px;padding:10px 14px;font-size:.9rem}
 .warn{background:#fdf6ec;border:1px solid var(--beige);border-radius:8px;padding:10px 14px;font-size:.9rem}
 .note{color:var(--sub);font-size:.92rem}
-.sera{background:var(--rose-soft);border-left:4px solid var(--rose);border-radius:8px;padding:10px 14px;font-size:.92rem}
+.sera{background:var(--sky-soft);border-left:4px solid var(--sky-dark);border-radius:8px;padding:10px 14px;font-size:.92rem}
 .eyecatch{width:100%;height:auto;border-radius:10px;margin:10px 0 6px}
 .scene{width:100%;height:auto;border-radius:10px;margin:14px 0 8px}
 table.cond{border-collapse:collapse;width:100%;margin-top:12px}
