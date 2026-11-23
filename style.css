@@ -79,8 +79,9 @@ footer{background:var(--panel);padding:28px 20px;font-size:.85rem;color:var(--su
 .sec-head{margin-bottom:26px}
 .sec-head .kicker{font-family:"Cormorant Garamond",serif;letter-spacing:.34em;font-size:.74rem;color:var(--sub);margin:0 0 8px}
 .sec-head h2{border:none;padding:0;margin:0;font-size:1.7rem}
-.jcard-meta{display:flex;align-items:center;gap:12px;padding:16px 20px 0;margin:0}
-.jcard-time{font-size:.8rem;color:var(--sub)}
+.jcard-meta{display:flex;align-items:center;gap:12px;padding:16px 20px 0;margin:0;flex-wrap:nowrap}
+.journal-grid{grid-template-columns:1fr 1fr}
+.jcard-time{font-size:.8rem;color:var(--sub);white-space:nowrap}
 .jcard h3{padding:8px 20px 0}
 .jcard h3 a{color:var(--ink);text-decoration:none}
 .jcard h3 a:hover{text-decoration:underline}
@@ -96,6 +97,6 @@ footer{background:var(--panel);padding:28px 20px;font-size:.85rem;color:var(--su
 .philosophy .kicker{font-family:"Cormorant Garamond",serif;letter-spacing:.34em;font-size:.74rem;color:var(--sub);margin:0 0 18px}
 .philosophy-catch{font-family:"Cormorant Garamond","Shippori Mincho",serif;font-size:2rem;line-height:1.7;letter-spacing:.06em;margin:0 0 20px}
 .philosophy-text{max-width:36em;margin:0 auto;color:var(--ink)}
-.news-tag{display:inline-block;background:var(--panel);color:var(--rose-dark);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:.74rem;letter-spacing:.08em}
+.news-tag{display:inline-block;background:var(--panel);color:var(--rose-dark);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:.74rem;letter-spacing:.08em;white-space:nowrap}
 @media (max-width:900px){.hero3{grid-template-columns:1fr;gap:28px}}
-@media (max-width:640px){.hero3{padding:36px 0 8px}.hero3 h1{font-size:1.85rem}.hero3-media img{aspect-ratio:16/10}.lux-lead{margin-top:28px}.top-sec{margin-top:56px}.tiles{grid-template-columns:1fr}.philosophy{margin-top:64px;padding:64px 20px}.philosophy-catch{font-size:1.55rem}header{padding:12px 16px 10px}.brand a{font-size:1.02rem;gap:8px;flex-wrap:nowrap}.logo{width:34px;height:34px}.tagline{font-size:.66rem;padding-left:8px;white-space:nowrap}nav{flex-wrap:nowrap;overflow-x:auto;gap:18px;margin-top:8px;padding-bottom:2px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{flex:0 0 auto;white-space:nowrap}}
+@media (max-width:640px){.hero3{padding:36px 0 8px}.hero3 h1{font-size:1.85rem}.hero3-media img{aspect-ratio:16/10}.lux-lead{margin-top:28px}.top-sec{margin-top:56px}.tiles{grid-template-columns:1fr}.journal-grid{grid-template-columns:1fr}.philosophy{margin-top:64px;padding:64px 20px}.philosophy-catch{font-size:1.55rem}header{padding:12px 16px 10px}.brand a{font-size:1.02rem;gap:8px;flex-wrap:nowrap}.logo{width:34px;height:34px}.tagline{font-size:.66rem;padding-left:8px;white-space:nowrap}nav{flex-wrap:nowrap;overflow-x:auto;gap:18px;margin-top:8px;padding-bottom:2px;scrollbar-width:none}nav::-webkit-scrollbar{display:none}nav a{flex:0 0 auto;white-space:nowrap}}
