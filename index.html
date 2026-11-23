@@ -24,7 +24,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-1EVFL7GYTP');
 </script>
-
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+});
+</script>
 </head>
 <body>
 <header>
@@ -47,12 +55,13 @@ gtag('config', 'G-1EVFL7GYTP');
 <h1>美容の道具箱</h1>
 <p class="catch"><span class="nb">量と表示が分かれば、</span><span class="nb">美容は失敗しない。</span></p>
 </div>
+<span class="hero-vtext">美容の道具箱</span>
 </div>
 <p>美容の道具箱は、現役セラピスト歴30年が案内する「買う前に読む美容案内」です。派手な効能の約束はしません。その代わり、現場の目で「どれくらいの量を・どう使えば・表示のどこを見れば」失敗しないかを伝えます。テクスチャー、使用量の目安、続けやすさといった、使う場面に即した視点を大切にします。</p>
 <p class="note">各カテゴリの商品紹介枠は、ASPへの登録・提携が完了してから順次掲載します。読み物（記事）は各カテゴリページにまとめています。</p>
 </section>
 <h2>案内役キャラクター</h2>
-<div class="chara">
+<div class="chara reveal">
 <img src="serafina.webp" width="660" height="578" alt="案内役キャラクター セラフィナ（人間バージョン）">
 <div>
 <h3>セラフィナと、看板猫のモコ</h3>
@@ -61,8 +70,8 @@ gtag('config', 'G-1EVFL7GYTP');
 </div>
 </div>
 <h2>カテゴリ</h2>
-<div class="grid cards-img">
-<div class="card">
+<div class="grid cards-img reveal">
+<div class="card featured">
 <a class="card-img" href="skincare.html"><img src="top-skincare.webp" width="900" height="600" alt="美容液の瓶とクリームジャー、バラの花の水彩イラスト" loading="lazy" decoding="async"></a>
 <h3>スキンケア</h3>
 <p>美容液・オールインワンなど。肌に触れる仕事の立場から、質感と使い続けやすさの観点を整理します。</p>
@@ -113,7 +122,7 @@ gtag('config', 'G-1EVFL7GYTP');
 </div>
 </div>
 <h3>カテゴリ別の読み物一覧</h3>
-<div class="grid cards-img">
+<div class="grid cards-img reveal">
 <div class="card">
 <a class="card-img" href="skincare.html"><img src="top-skincare.webp" width="900" height="600" alt="美容液の瓶とクリームジャー、バラの花の水彩イラスト" loading="lazy" decoding="async"></a>
 <h3>スキンケアの読み物（全25記事）</h3>

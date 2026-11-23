@@ -24,7 +24,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-1EVFL7GYTP');
 </script>
-
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+});
+</script>
 </head>
 <body>
 <header>
@@ -45,6 +53,7 @@ gtag('config', 'G-1EVFL7GYTP');
 <div class="hero-visual-text">
 <h1>ボディケア</h1>
 </div>
+<span class="hero-vtext">ボディケア</span>
 </div>
 <p>ボディケアは、このサイトの中心カテゴリです。施術の現場では、部位によって乾燥しやすい場所や、クリームやオイルの適量が変わることを日々実感します。その実務の視点を、アイテム選びと使い方の工夫として紹介します。</p>
 
@@ -57,8 +66,8 @@ gtag('config', 'G-1EVFL7GYTP');
 </ul>
 <h2>読み物</h2>
 <p>商品が揃う前でも読める、このカテゴリの「選び方・読み方・使い方」の記事です。</p>
-<div class="grid cards-img">
-<div class="card">
+<div class="grid cards-img reveal">
+<div class="card featured">
 <a class="card-img" href="bodycare-amount.html"><img src="eyecatch-bodycare-amount.webp" width="900" height="600" alt="部位で変える、ボディクリームの塗る量の目安" loading="lazy" decoding="async"></a>
 <h3>部位で変える、ボディクリームの塗る量の目安</h3>
 <p>脚・腕・背中など、部位の面積で量を考える方法と、塗るタイミングの工夫を、施術の現場から紹介します。</p>

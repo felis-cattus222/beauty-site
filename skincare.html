@@ -24,7 +24,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-1EVFL7GYTP');
 </script>
-
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+});
+</script>
 </head>
 <body>
 <header>
@@ -45,6 +53,7 @@ gtag('config', 'G-1EVFL7GYTP');
 <div class="hero-visual-text">
 <h1>スキンケア</h1>
 </div>
+<span class="hero-vtext">スキンケア</span>
 </div>
 <p>スキンケアは、美容液やオールインワンなど種類が多く、定期購入のプランを用意している商品も多いカテゴリです。このページでは、施術で日々いろいろな肌に触れる立場から、「使う場面」を基準に選ぶための観点をまとめ、提携後に商品を紹介します。</p>
 
@@ -57,8 +66,8 @@ gtag('config', 'G-1EVFL7GYTP');
 </ul>
 <h2>読み物</h2>
 <p>商品が揃う前でも読める、このカテゴリの「選び方・読み方・使い方」の記事です。</p>
-<div class="grid cards-img">
-<div class="card">
+<div class="grid cards-img reveal">
+<div class="card featured">
 <a class="card-img" href="skincare-amount.html"><img src="eyecatch-skincare-amount.webp" width="900" height="600" alt="美容液の使用量、どう決める？ パッケージの『適量』の読み方" loading="lazy" decoding="async"></a>
 <h3>美容液の使用量、どう決める？ パッケージの『適量』の読み方</h3>
 <p>「パール粒大」「500円玉大」といった表示の読み方と、内容量から1回量を逆算する考え方を整理しました。</p>

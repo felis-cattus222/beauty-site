@@ -24,7 +24,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-1EVFL7GYTP');
 </script>
-
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+});
+</script>
 </head>
 <body>
 <header>
@@ -45,6 +53,7 @@ gtag('config', 'G-1EVFL7GYTP');
 <div class="hero-visual-text">
 <h1>運営者について</h1>
 </div>
+<span class="hero-vtext">運営者について</span>
 </div>
 <p>「美容の道具箱」は、現役セラピストが個人で運営するサイトです。現役セラピスト歴30年が案内する「買う前に読む美容案内」として、美容アイテムを「実際に使う場面」の視点で案内します。</p>
 <p class="catch">「毎日、肌に触れる仕事です。だから、使い方にはうるさいんです。」</p>
@@ -65,7 +74,7 @@ gtag('config', 'G-1EVFL7GYTP');
 <li>広告リンクのあるページにはPR表記を置きます（<a href="disclosure.html">広告表記・アフィリエイト開示</a>）</li>
 </ul>
 <h2>案内役キャラクター：セラフィナとモコ</h2>
-<div class="chara">
+<div class="chara reveal">
 <img src="serafina.webp" width="660" height="578" alt="案内役キャラクター セラフィナ（人間バージョン）と白猫のモコ">
 <div>
 <h3>セラフィナ（人間バージョン）</h3>

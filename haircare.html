@@ -24,7 +24,15 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-1EVFL7GYTP');
 </script>
-
+<script>
+document.documentElement.classList.add('js');
+document.addEventListener('DOMContentLoaded', function () {
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+});
+</script>
 </head>
 <body>
 <header>
@@ -45,6 +53,7 @@ gtag('config', 'G-1EVFL7GYTP');
 <div class="hero-visual-text">
 <h1>ヘアケア</h1>
 </div>
+<span class="hero-vtext">ヘアケア</span>
 </div>
 <p>ヘアケア・スカルプは、シャンプーやトリートメント、頭皮まわりのアイテムが中心のカテゴリです。ヘッド施術で頭皮に触れる機会の多い立場から、使い心地の観点を整理して紹介します。</p>
 
@@ -57,8 +66,8 @@ gtag('config', 'G-1EVFL7GYTP');
 </ul>
 <h2>読み物</h2>
 <p>商品が揃う前でも読める、このカテゴリの「選び方・読み方・使い方」の記事です。</p>
-<div class="grid cards-img">
-<div class="card">
+<div class="grid cards-img reveal">
+<div class="card featured">
 <a class="card-img" href="haircare-scalp.html"><img src="eyecatch-haircare-scalp.webp" width="900" height="600" alt="頭皮に触れる仕事から：シャンプー選びで見る3つの観点" loading="lazy" decoding="async"></a>
 <h3>頭皮に触れる仕事から：シャンプー選びで見る3つの観点</h3>
 <p>成分表示の読み方、泡立ちとすすぎのしやすさ、香りと続けやすさ。ヘッド施術の現場視点で整理しました。</p>
