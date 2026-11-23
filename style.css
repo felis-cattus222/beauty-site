@@ -107,6 +107,11 @@ footer{background:var(--panel);padding:28px 20px;font-size:.85rem;color:var(--su
 .guide-box-name{font-family:var(--serif);font-weight:600;letter-spacing:.05em;margin:0 0 6px}
 .guide-box-text p{margin:0 0 6px;font-size:.94rem}
 .guide-box-text .guide-box-links{margin:0;font-size:.9rem}
+.sister-bar{display:flex;gap:18px;align-items:center;overflow-x:auto;background:var(--panel);border-bottom:1px solid var(--line);padding:7px 16px;font-size:.78rem;letter-spacing:.06em;white-space:nowrap;scrollbar-width:none}
+.sister-bar::-webkit-scrollbar{display:none}
+.sister-bar a{color:var(--ink);text-decoration:none;flex:0 0 auto}
+.sister-bar a:hover{color:var(--accent)}
+.sister-label{color:var(--accent);font-weight:600;flex:0 0 auto}
 .cat-sera{display:flex;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:22px 0 6px}
 .cat-sera img{width:64px;height:64px;object-fit:cover;object-position:50% 0;border-radius:50%;flex:0 0 auto}
 .cat-sera p{margin:0;font-size:.95rem}
