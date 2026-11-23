@@ -12,7 +12,7 @@
 <meta property="og:description" content="現役セラピスト（施術歴30年）が、スキンケア・サプリ・ヘアケア・ボディケアの選び方と使い方を案内するサイト。使用量の目安や表示の読み方など、毎日のケアに役立つ観点を、施術の現場の経験から整理しています。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://felis-cattus222.github.io/beauty-site/">
-<meta property="og:image" content="https://felis-cattus222.github.io/beauty-site/serafina.webp">
+<meta property="og:image" content="https://felis-cattus222.github.io/beauty-site/hero-campaign.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://felis-cattus222.github.io/beauty-site/">
 
@@ -29,10 +29,10 @@ document.documentElement.classList.add('js');
 document.addEventListener('DOMContentLoaded', function () {
   var io = new IntersectionObserver(function (es) {
     es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05, rootMargin: '0px 0px 120px 0px' });
   document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
 });
-</script>
+</script><style>body{overflow-x:clip}</style>
 </head>
 <body>
 <header>
@@ -48,78 +48,54 @@ document.addEventListener('DOMContentLoaded', function () {
 <main>
 
 
-<section class="hero">
-<div class="hero-visual">
-<img src="top-hero.webp" width="1600" height="900" alt="ドレッサーの前に座るセラフィナと白猫モコの水彩イラスト">
-<div class="hero-visual-text">
+<section class="lux-hero">
+<img src="hero-campaign.webp" width="1600" height="900" alt="朝の光の中のフロストガラスの美容液瓶とクリームジャー、バラの花びらとユーカリ">
+<div class="lux-hero-inner">
+<p class="lux-kicker">THE BEAUTY TOOLBOX</p>
 <h1>美容の道具箱</h1>
 <p class="catch"><span class="nb">量と表示が分かれば、</span><span class="nb">美容は失敗しない。</span></p>
+<p class="lux-sub">現役セラピスト歴30年が案内する、買う前に読む美容案内</p>
 </div>
-<span class="hero-vtext">美容の道具箱</span>
-</div>
+</section>
+<div class="lux-lead reveal">
 <p>美容の道具箱は、現役セラピスト歴30年が案内する「買う前に読む美容案内」です。派手な効能の約束はしません。その代わり、現場の目で「どれくらいの量を・どう使えば・表示のどこを見れば」失敗しないかを伝えます。テクスチャー、使用量の目安、続けやすさといった、使う場面に即した視点を大切にします。</p>
 <p class="note">各カテゴリの商品紹介枠は、ASPへの登録・提携が完了してから順次掲載します。読み物（記事）は各カテゴリページにまとめています。</p>
+</div>
+<section class="top-sec">
+<div class="sec-head reveal"><p class="kicker">CATEGORIES</p><h2>カテゴリ</h2></div>
+<div class="cat-row reveal">
+<a class="cat-media" href="skincare.html"><img src="top-skincare.webp" width="900" height="600" loading="lazy" alt="美容液の瓶とクリームジャー、バラの花の水彩イラスト"></a>
+<div class="cat-text"><p class="cat-en">SKINCARE</p><h3>スキンケア</h3><p>美容液・オールインワンなど。肌に触れる仕事の立場から、質感と使い続けやすさの観点を整理します。</p><p><a class="more-link" href="skincare.html">カテゴリを見る</a></p></div>
+</div>
+<div class="cat-row rev reveal">
+<a class="cat-media" href="supplement.html"><img src="top-supplement.webp" width="900" height="600" loading="lazy" alt="サプリメントの瓶と水のグラス、緑の葉の水彩イラスト"></a>
+<div class="cat-text"><p class="cat-en">INNER CARE</p><h3>インナーケア・サプリ</h3><p>食品としてのサプリメントの案内。成分表示の読み方と、無理なく続ける工夫が中心です。</p><p><a class="more-link" href="supplement.html">カテゴリを見る</a></p></div>
+</div>
+<div class="cat-row reveal">
+<a class="cat-media" href="haircare.html"><img src="top-haircare.webp" width="900" height="600" loading="lazy" alt="シャンプーとトリートメントの瓶、木製ブラシと畳んだタオルの水彩イラスト"></a>
+<div class="cat-text"><p class="cat-en">HAIR CARE</p><h3>ヘアケア・スカルプ</h3><p>髪と頭皮まわりのアイテム。香り・泡立ち・仕上がりの質感といった観点で見ます。</p><p><a class="more-link" href="haircare.html">カテゴリを見る</a></p></div>
+</div>
+<div class="cat-row rev reveal">
+<a class="cat-media" href="bodycare.html"><img src="top-bodycare.webp" width="900" height="600" loading="lazy" alt="ボディクリームのジャーとタオル、バスソルトの小鉢とユーカリの水彩イラスト"></a>
+<div class="cat-text"><p class="cat-en">BODY CARE</p><h3>ボディケア</h3><p>セラピストの本命カテゴリ。部位ごとの塗り方や量の目安など、施術の現場の視点で紹介します。</p><p><a class="more-link" href="bodycare.html">カテゴリを見る</a></p></div>
+</div>
 </section>
-<h2>案内役キャラクター</h2>
-<div class="chara reveal">
-<img src="serafina.webp" width="660" height="578" alt="案内役キャラクター セラフィナ（人間バージョン）">
-<div>
-<h3>セラフィナと、看板猫のモコ</h3>
-<p>このサイトの案内役はセラフィナ。222キャラ工房のLINEスタンプ「セラフィナのヨガスタンプ」のキャラクターを、人間の姿で描き起こしたものです。そばにいる白猫はモコ。セラフィナの相棒で、このサイトの看板猫です。ロゴとファビコンの顔もモコが担当しています。セラフィナとモコの二人で、カテゴリの選び方や比較の見方を案内します。</p>
-<p>プロフィールは <a href="about.html">運営者について</a> にまとめています。</p>
+<section class="philosophy reveal">
+<div class="philosophy-inner">
+<p class="kicker">PHILOSOPHY</p>
+<p class="philosophy-catch">量と表示が分かれば、<br>美容は失敗しない。</p>
+<p>美容の道具箱が大切にするのは、使う場面に即した視点です。テクスチャー、使用量の目安、続けやすさ、そして表示の読み方。派手な約束の代わりに、現場の目で確かめた物差しを置きます。</p>
 </div>
-</div>
-<h2>カテゴリ</h2>
-<div class="grid cards-img reveal">
-<div class="card featured">
-<a class="card-img" href="skincare.html"><img src="top-skincare.webp" width="900" height="600" alt="美容液の瓶とクリームジャー、バラの花の水彩イラスト" loading="lazy" decoding="async"></a>
-<h3>スキンケア</h3>
-<p>美容液・オールインワンなど。肌に触れる仕事の立場から、質感と使い続けやすさの観点を整理します。</p>
-<p><a class="btn" href="skincare.html">ページを開く</a></p>
-</div>
-<div class="card">
-<a class="card-img" href="supplement.html"><img src="top-supplement.webp" width="900" height="600" alt="サプリメントの瓶と水のグラス、緑の葉の水彩イラスト" loading="lazy" decoding="async"></a>
-<h3>インナーケア・サプリ</h3>
-<p>食品としてのサプリメントの案内。成分表示の読み方と、無理なく続ける工夫が中心です。</p>
-<p><a class="btn" href="supplement.html">ページを開く</a></p>
-</div>
-<div class="card">
-<a class="card-img" href="haircare.html"><img src="top-haircare.webp" width="900" height="600" alt="シャンプーとトリートメントの瓶、木製ブラシと畳んだタオルの水彩イラスト" loading="lazy" decoding="async"></a>
-<h3>ヘアケア・スカルプ</h3>
-<p>髪と頭皮まわりのアイテム。香り・泡立ち・仕上がりの質感といった観点で見ます。</p>
-<p><a class="btn" href="haircare.html">ページを開く</a></p>
-</div>
-<div class="card">
-<a class="card-img" href="bodycare.html"><img src="top-bodycare.webp" width="900" height="600" alt="ボディクリームのジャーとタオル、バスソルトの小鉢とユーカリの水彩イラスト" loading="lazy" decoding="async"></a>
-<h3>ボディケア</h3>
-<p>セラピストの本命カテゴリ。部位ごとの塗り方や量の目安など、施術の現場の視点で紹介します。</p>
-<p><a class="btn" href="bodycare.html">ページを開く</a></p>
-</div>
-</div>
-<h2>読み物（記事）</h2>
+</section>
+<section class="top-sec">
+<div class="sec-head reveal"><p class="kicker">JOURNAL</p><h2>読み物（記事）</h2></div>
 <p>商品が揃う前でも読める、「選び方・読み方・使い方」の記事です。施術の現場で日々感じることを、セラピスト歴30年の一人称で書いています。各カテゴリ25記事ずつ、カテゴリページの「読み物」にまとめています。</p>
 <h3>新着記事</h3>
-<div class="grid">
-<div class="card">
-<h3>スキンケア手順を見直すチェックリスト</h3>
-<p>スキンケアの新着。手順・量・順番を項目で点検し、変えるのは一度に1つだけという見直し方です。</p>
-<p><a class="btn" href="skincare-routine-check.html">記事を読む</a></p>
-</div>
-<div class="card">
-<h3>粉末・ドリンクタイプの飲み方の工夫</h3>
-<p>インナーケア・サプリの新着。溶かす水の量と温度、作り置きをしない管理の工夫です。</p>
-<p><a class="btn" href="supplement-powder.html">記事を読む</a></p>
-</div>
-<div class="card">
-<h3>朝の寝ぐせ直しの手順</h3>
-<p>ヘアケアの新着。根元を湿らせる範囲の決め方と、ドライヤーで向きを戻す朝の手順です。</p>
-<p><a class="btn" href="haircare-morning.html">記事を読む</a></p>
-</div>
-<div class="card">
-<h3>肩・首まわりのセルフケアの組み立て</h3>
-<p>ボディケアの新着。手の届く範囲の触れ方と、姉妹サイトのストレッチ資料への案内です。</p>
-<p><a class="btn" href="bodycare-shoulder.html">記事を読む</a></p>
-</div>
+<div class="news-list reveal">
+<a class="news-row" href="skincare-routine-check.html"><span class="news-tag">スキンケア</span><span class="news-main"><span class="news-title">スキンケア手順を見直すチェックリスト</span><span class="news-desc">手順・量・順番を項目で点検し、変えるのは一度に1つだけという見直し方です。</span></span><span class="news-arrow">→</span></a>
+<a class="news-row" href="supplement-powder.html"><span class="news-tag">インナーケア・サプリ</span><span class="news-main"><span class="news-title">粉末・ドリンクタイプの飲み方の工夫</span><span class="news-desc">溶かす水の量と温度、作り置きをしない管理の工夫です。</span></span><span class="news-arrow">→</span></a>
+<a class="news-row" href="haircare-morning.html"><span class="news-tag">ヘアケア</span><span class="news-main"><span class="news-title">朝の寝ぐせ直しの手順</span><span class="news-desc">根元を湿らせる範囲の決め方と、ドライヤーで向きを戻す朝の手順です。</span></span><span class="news-arrow">→</span></a>
+<a class="news-row" href="bodycare-shoulder.html"><span class="news-tag">ボディケア</span><span class="news-main"><span class="news-title">肩・首まわりのセルフケアの組み立て</span><span class="news-desc">手の届く範囲の触れ方と、姉妹サイトのストレッチ資料への案内です。</span></span><span class="news-arrow">→</span></a>
 </div>
 <h3>カテゴリ別の読み物一覧</h3>
 <div class="grid cards-img reveal">
@@ -148,18 +124,36 @@ document.addEventListener('DOMContentLoaded', function () {
 <p><a class="btn" href="bodycare.html">記事一覧を見る</a></p>
 </div>
 </div>
-<h2>比較ランキングについて</h2>
+</section>
+<section class="top-sec">
+<div class="sec-head reveal"><p class="kicker">GUIDE</p><h2>案内役キャラクター</h2></div>
+<div class="chara reveal">
+<img src="serafina.webp" width="660" height="578" alt="案内役キャラクター セラフィナ（人間バージョン）">
+<div>
+<h3>セラフィナと、看板猫のモコ</h3>
+<p>このサイトの案内役はセラフィナ。222キャラ工房のLINEスタンプ「セラフィナのヨガスタンプ」のキャラクターを、人間の姿で描き起こしたものです。そばにいる白猫はモコ。セラフィナの相棒で、このサイトの看板猫です。ロゴとファビコンの顔もモコが担当しています。セラフィナとモコの二人で、カテゴリの選び方や比較の見方を案内します。</p>
+<p>プロフィールは <a href="about.html">運営者について</a> にまとめています。</p>
+</div>
+</div>
+</section>
+<section class="top-sec">
+<div class="sec-head reveal"><p class="kicker">RANKING</p><h2>比較ランキングについて</h2></div>
 <p>カテゴリ横断の比較は、比較条件（対象・項目・評価の方法）を先に明示してから掲載します。型ページは <a href="ranking.html">比較ランキング</a> に用意しています。</p>
-<h2>関連サイト</h2>
+</section>
+<section class="top-sec">
+<div class="sec-head reveal"><p class="kicker">RELATED SITES</p><h2>関連サイト</h2></div>
 <div class="grid">
 <div class="card">
-<h3>症状別セルフケア資料｜ストレッチ図解【全100症状】</h3>
+<h3>症状別セルフケア資料｜ストレッチ図解</h3>
 <p>肩こり・腰痛から肌のくすみ・たるみまで、全100症状のセルフケア資料を症状ごとに掲載した姉妹サイト。ボディケアの実践編としてどうぞ。</p>
 <p><a class="btn" href="https://tomyree-source.github.io/sites/selfcare-library/" target="_blank" rel="noopener">サイトを開く</a></p>
 </div>
 </div>
-<h2>運営者</h2>
+</section>
+<section class="top-sec">
+<div class="sec-head reveal"><p class="kicker">OPERATOR</p><h2>運営者</h2></div>
 <p>運営者は現役セラピスト歴30年の運営者（鍼灸師・登録販売者・パーソナルトレーナー）です。詳しくは <a href="about.html">運営者について</a> をご覧ください。広告の扱いについては <a href="disclosure.html">広告表記・アフィリエイト開示</a> にまとめています。</p>
+</section>
 
 </main>
 <footer>
