@@ -15,6 +15,10 @@ main{max-width:960px;margin:0 auto;padding:24px 20px 48px}
 .hero{padding:24px 0 8px}
 .hero h1{font-size:2rem;color:var(--rose-dark);margin:0 0 8px}
 .catch{font-size:1.3rem;font-weight:bold;color:var(--rose-dark);margin:8px 0}
+.hero-visual{position:relative;border-radius:14px;overflow:hidden;background:var(--panel);margin-bottom:20px}
+.hero-visual img{display:block;width:100%;height:auto}
+.hero-visual-text{position:absolute;left:0;top:0;bottom:0;width:58%;display:flex;flex-direction:column;justify-content:center;padding:28px 34px;background:linear-gradient(90deg,rgba(255,250,246,.95) 30%,rgba(255,250,246,.55) 68%,rgba(255,250,246,0))}
+.hero-visual-text h1{margin:0 0 8px}
 .byline{color:var(--sub);font-size:.88rem;border-top:1px dashed var(--beige);padding-top:8px;margin-top:24px}
 h1{color:var(--rose-dark)}
 h2{color:var(--rose-dark);border-bottom:2px solid var(--sky);padding-bottom:4px;margin-top:36px}
@@ -22,6 +26,11 @@ h2{color:var(--rose-dark);border-bottom:2px solid var(--sky);padding-bottom:4px;
 .card{background:var(--panel);border:1px solid var(--beige);border-radius:10px;padding:16px}
 .card h3{margin:0 0 6px;font-size:1.02rem}
 .card p{margin:4px 0;font-size:.94rem}
+.cards-img .card{padding:0 0 16px;overflow:hidden}
+.cards-img .card h3{padding:14px 18px 0}
+.cards-img .card p{padding:0 18px}
+.card-img{display:block}
+.card-img img{display:block;width:100%;height:180px;object-fit:cover}
 .card.slot{background:#fff;border-style:dashed}
 .status{display:inline-block;background:var(--rose-soft);color:var(--rose-dark);border-radius:4px;padding:2px 8px;font-size:.82rem;font-weight:bold}
 .btn{display:inline-block;background:var(--rose);color:#fff !important;padding:6px 14px;border-radius:6px;text-decoration:none;font-weight:bold}
@@ -39,5 +48,5 @@ table.cond th{background:var(--panel);white-space:nowrap;color:var(--rose-dark)}
 .chara img{width:220px;max-width:40%;border-radius:8px}
 .chara h3{margin:0 0 6px;color:var(--rose-dark)}
 .chara p{margin:4px 0;font-size:.94rem}
-@media(max-width:640px){.chara{flex-direction:column}.chara img{max-width:70%;margin:0 auto}}
+@media(max-width:640px){.chara{flex-direction:column}.chara img{max-width:70%;margin:0 auto}.hero-visual-text{width:100%;background:linear-gradient(180deg,rgba(255,250,246,.88),rgba(255,250,246,.35) 75%,rgba(255,250,246,0));justify-content:flex-start;padding:18px 20px}.hero-visual-text h1{font-size:1.55rem}.hero-visual-text .catch{font-size:1.02rem}}
 footer{background:var(--panel);padding:20px;font-size:.85rem;color:var(--sub);border-top:1px solid var(--beige)}
